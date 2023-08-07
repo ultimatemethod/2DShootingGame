@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 2917085506211749081}
   - component: {fileID: 4726020358587921003}
   - component: {fileID: 6245077952815155164}
+  - component: {fileID: 6052213314630994858}
+  - component: {fileID: 7671764282064317506}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,11 +31,11 @@ Transform:
   m_GameObject: {fileID: 7487691754954485696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.4, y: 5.98, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.85858, y: 0.85858, z: 0.85858}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6737149131080668183
 MeshFilter:
@@ -129,7 +131,38 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &6052213314630994858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7487691754954485696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74782213ca1c8a45bc3543aac4eddfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  dir: {x: 0, y: -1, z: 0}
+  fireTime: 1
+--- !u!114 &7671764282064317506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7487691754954485696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b7b633ec429424a9dfab9b6f6c5b39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatTime: 1
+  bullet: {fileID: 916440057404074338, guid: 6fc2b8efae0179744a5bcd39d30b2ac9, type: 3}
+  minTime: 2
+  maxTime: 5

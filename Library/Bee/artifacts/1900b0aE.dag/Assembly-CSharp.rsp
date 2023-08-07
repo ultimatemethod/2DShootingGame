@@ -353,7 +353,11 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Script/Bullet.cs"
+"Assets/Script/DestroyZone.cs"
 "Assets/Script/Enemy.cs"
+"Assets/Script/EnemyFire.cs"
+"Assets/Script/EnemyManager.cs"
+"Assets/Script/E_Bullet.cs"
 "Assets/Script/PlayerFire.cs"
 "Assets/Script/PlayerMove.cs"
 -langversion:9.0

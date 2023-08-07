@@ -15,6 +15,11 @@ public class Bullet : MonoBehaviour
     // 목표: 내가(총알) 위로 날아간다.
     void Update()
     {
+        
         transform.position += dir * speed * Time.deltaTime;
+        
+
     }
+
+    
 }

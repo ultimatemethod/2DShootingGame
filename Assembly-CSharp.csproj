@@ -59,8 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Enemy.cs" />
+    <Compile Include="Assets\Script\E_Bullet.cs" />
+    <Compile Include="Assets\Script\EnemyFire.cs" />
+    <Compile Include="Assets\Script\EnemyManager.cs" />
     <Compile Include="Assets\Script\PlayerMove.cs" />
     <Compile Include="Assets\Script\Bullet.cs" />
+    <Compile Include="Assets\Script\DestroyZone.cs" />
     <Compile Include="Assets\Script\PlayerFire.cs" />
   </ItemGroup>
   <ItemGroup>
