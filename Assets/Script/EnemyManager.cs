@@ -23,7 +23,7 @@ public class EnemyManager : MonoBehaviour
     // 적 게임오브젝트 
     public GameObject enemy;
 
-    // 랜덤한 시간의 최소 최대값
+    // 랜덤 시간 최소 최대값
     public float minTime = 3;
     public float maxTime = 5;
 
@@ -36,11 +36,11 @@ public class EnemyManager : MonoBehaviour
     void Update()
     {
         // 순서1. 현재 시간이 흐른다.
-        // currentTime = currentTime + Time.deltaTime;
+        //currentTime = currentTime + Time.deltaTime;
         currentTime += Time.deltaTime;
-        print("CurrentTime: " + currentTime);
+        //print("CurrentTime: " + currentTime);
 
-        // 순서2. 특정시간이 지나면
+        // 순서2. 특정시간 지나면
         if(currentTime > creatTime)
         {
             // 순서3. 적을 EnemyManager위치에 생성

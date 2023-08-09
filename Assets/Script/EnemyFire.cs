@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyFire : MonoBehaviour
-{
-    public float creatTime;
-    float currentTime = 0;
+{  
     public GameObject bullet;
+    public GameObject gunPos;
+    float currentTime;
+    public float creatTime = 1;
+    GameObject player;
+    Vector3 playerDir;
 
-    // 랜덤한 시간의 최소 최대값
-    public float minTime = 2;
-    public float maxTime = 5;
 
     private void Start()
     {
-        creatTime = Random.Range(minTime, maxTime);
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
@@ -26,11 +26,15 @@ public class EnemyFire : MonoBehaviour
         // 순서2. 특정시간이 지나면
         if (currentTime > creatTime)
         {
-            // 순서3. 총알을 Enemy위치에 생성
-            GameObject enemyBullet = Instantiate(bullet);
-            enemyBullet.transform.position = transform.position;
+            GameObject bulletGO = Instantiate(bullet);
+            //bulletGO.tag = "EnemyBullet";
 
-            // 순서4. 시간 초기화
+            bulletGO.transform.position = gunPos.transform.position;
+
+            playerDir = (player.transform.position - gameObject.transform.position).normalized;
+            bulletGO.GetComponent<E_Bullet>().dir = playerDir;
+            Debug.Log(creatTime);
+
             currentTime = 0;
         }
     }

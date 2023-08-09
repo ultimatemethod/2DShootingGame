@@ -6,9 +6,8 @@ public class E_Bullet : MonoBehaviour
 {
     public float speed = 3.0f;
     public Vector3 dir = Vector3.down;
+    public GameObject bulletExplosion;
 
-
-    // 목표: 내가(총알) 위로 날아간다.
     void Update()
     {
 
@@ -18,10 +17,12 @@ public class E_Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision otherObject)
     {
-        if (otherObject.gameObject.tag == "Player")
-        {
-            Destroy(otherObject.gameObject);
-            Destroy(gameObject);
-        }
+
+        Destroy(otherObject.gameObject);
+        Destroy(gameObject);
+
+        GameObject bulletExplosionGO = Instantiate(bulletExplosion);
+        bulletExplosionGO.transform.position = transform.position;
+
     }
 }

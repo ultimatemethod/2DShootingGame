@@ -58,14 +58,34 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.4f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\SkillItemMove.cs" />
+    <Compile Include="Assets\Script\EffectDestroyer.cs" />
+    <Compile Include="Assets\Script\SkillManager.cs" />
+    <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\ExploderComponent.cs" />
     <Compile Include="Assets\Script\Enemy.cs" />
+    <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\ParticleComponent.cs" />
+    <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\LightComponent.cs" />
+    <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\PseudoVolumetricComponent.cs" />
+    <Compile Include="Assets\Travis Game Assets\Hit Impact Effects\Demo Scene\Scripts\HitImpactEffectsPreview.cs" />
     <Compile Include="Assets\Script\E_Bullet.cs" />
+    <Compile Include="Assets\True Explosions\System\Scripts\exploders\Exploder2D.cs" />
     <Compile Include="Assets\Script\EnemyFire.cs" />
+    <Compile Include="Assets\Script\SoundManager.cs" />
+    <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\VolumetricComponent.cs" />
     <Compile Include="Assets\Script\EnemyManager.cs" />
     <Compile Include="Assets\Script\PlayerMove.cs" />
     <Compile Include="Assets\Script\Bullet.cs" />
     <Compile Include="Assets\Script\DestroyZone.cs" />
+    <Compile Include="Assets\True Explosions\System\Scripts\effects\PseudoVolumetricExplosion.cs" />
+    <Compile Include="Assets\True Explosions\System\Scripts\exploders\SphereExploder.cs" />
+    <Compile Include="Assets\True Explosions\System\Scripts\exploders\Exploder.cs" />
     <Compile Include="Assets\Script\PlayerFire.cs" />
+    <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\VolumetricComponent2D.cs" />
+    <Compile Include="Assets\Script\BackgroundRoller.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Travis Game Assets\Hit Impact Effects\Readme.txt" />
+    <None Include="Assets\True Explosions\System\Shaders\SphereVolumetricExplosion.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
